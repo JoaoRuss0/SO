@@ -1,4 +1,5 @@
 #include <string.h>
+
 #include "conta_letra.h"
 
 int count_character_in_word (const char character, const char *string) {

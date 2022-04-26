@@ -7,7 +7,7 @@ all: $(PROGRAM)
 $(PROGRAM): $(OBJS)
 	$(CC) -o $@ $^
 
-main.o: main.c
+main.o: main.c conta_letra.h debug.h
 conta_letra.o: conta_letra.c conta_letra.h
 debug.o: debug.c debug.h
 
