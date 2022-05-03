@@ -1,2 +1,11 @@
-# args.ggo
-# Ficheiro de configuração do programa SO
+package "test"
+purpose "test"
+version "1.0"
+
+# Options
+option  "nome"          n "Parâmetro nome"       string     no
+option  "valor"         v "Parâmetro valor"      int       yes
+option  "idade"         i "Parâmetro idade"      short      no
+option  "habitantes"    b "Parâmetro habitantes" long      yes
+option  "tonelagem"     t "Parâmetro tonelagem"  float      no
+option  "margem"        m "Parâmetro margem"     double     no

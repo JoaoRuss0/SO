@@ -2,3 +2,6 @@
 *.o
 core.*
 ~*
+.bak
+cmake-build-debug/
+CMakeLists.txt
