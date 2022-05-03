@@ -3,5 +3,8 @@
 core.*
 ~*
 .bak
+args.c
+args.h
+
 cmake-build-debug/
 CMakeLists.txt
