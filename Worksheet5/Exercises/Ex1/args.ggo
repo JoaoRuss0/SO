@@ -1,0 +1,10 @@
+package "matrix"
+version "1.0"
+purpose "Gengetopt file for matrix"
+
+# Mandatory options
+option	"columns"	c	"Number of columns of the second matrix"							int		required
+option	"rows"		r	"Number of rows of the first matrix"								int		required
+option	"mul" 		m	"Number of rows of first matrix and columns of the second matrix"	int		required
+option	"value1"	o	"Value to fill first matrix with"									float	required
+option	"value2"	t	"Value to fill second matrix with"									float	required

@@ -1,0 +1,7 @@
+ulimit -c unlimited
+sudo sysctl -w kernel.core_uses_pid=0
+
+De forma a que estas alterações sejam permanentes pode editar os seguintes ficheiros:
+
+/etc/security/limits.conf
+/etc/sysctl.conf
