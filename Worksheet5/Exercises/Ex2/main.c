@@ -20,20 +20,23 @@ int main(int argc, char *argv[]){
 
 	float value1 = args.value1_arg, value2 = args.value2_arg;
 
-	float **matrix1 = matrix_new(n_rows1, n_columns1);
-	matrix_fill(matrix1, n_rows1, n_columns1, value1);
-	matrix_print(matrix1, n_rows1, n_columns1);
+	Matrix matrix1;
+    matrix_new(&matrix1, n_rows1, n_columns1);
+	matrix_fill(&matrix1, value1);
+	matrix_print(&matrix1);
 
-	float **matrix2 = matrix_new(n_rows2, n_columns2);
-	matrix_fill(matrix2, n_rows2, n_columns2, value2);
-	matrix_print(matrix2, n_rows2, n_columns2);
+	Matrix matrix2;
+    matrix_new(&matrix2, n_rows2, n_columns2);
+	matrix_fill(&matrix2, value2);
+	matrix_print(&matrix2);
 
-	float **matrix3 = matrix_mul(matrix1, n_rows1, n_columns1, matrix2, n_columns2);
-	matrix_print(matrix3, n_rows1, n_rows2);
+	Matrix matrix3;
+    matrix_mul(&matrix1, &matrix2, &matrix3);
+	matrix_print(&matrix3);
 
-	matrix_delete(matrix1, n_rows1);
-	matrix_delete(matrix2, n_rows2);
-	matrix_delete(matrix3, n_rows2);
+	matrix_delete(&matrix1);
+	matrix_delete(&matrix2);
+	matrix_delete(&matrix3);
 
 	cmdline_parser_free(&args);
 
