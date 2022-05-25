@@ -6,4 +6,4 @@ core.*
 args.c
 args.h
 
-cmake-build-debug/
+.vscode/
