@@ -1,0 +1,6 @@
+package "Gengetopt file for peekgzip"
+version "1.0"
+
+# Mandatory option
+
+option  "filename"  f   "File to read from"   string  required

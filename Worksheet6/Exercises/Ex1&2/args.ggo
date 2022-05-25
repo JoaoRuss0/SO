@@ -1,0 +1,7 @@
+package "Gengetopt file for bhead"
+version "1.0"
+
+# Mandatory option
+
+option  "num"       n   "Number of byets to read"       int     required
+option  "filename"  f   "File to read the bytes from"   string  required
