@@ -1,0 +1,4 @@
+package "Example of .ggo file"
+version "1.0"
+
+option "file" f "File to invert" string required
