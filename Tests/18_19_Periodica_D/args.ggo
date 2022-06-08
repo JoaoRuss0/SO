@@ -1,0 +1,5 @@
+package "Example of .ggo file"
+version "1.0"
+
+option  "file"      f   "File to be processed"                                              string  required
+option  "verbose"   v   "When activate, bytes that are not in the ASCII range are shown"            optional
