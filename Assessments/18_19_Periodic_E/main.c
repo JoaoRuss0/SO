@@ -9,7 +9,6 @@
 #include <sys/stat.h>
 
 #include "debug.h"
-#include "memory.h"
 #include "aux.h"
 
 #define ERROR_ARGS 1
